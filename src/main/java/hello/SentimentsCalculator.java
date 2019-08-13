@@ -1,4 +1,4 @@
-package hello;
+﻿package hello;
 
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
@@ -35,7 +35,7 @@ public class SentimentsCalculator {
 //            AmazonComprehend comprehendClient =
 //                AmazonComprehendClientBuilder.standard()
 //                   // .withCredentials(awsCreds)
-//                    .withCredentials(new AWSStaticCredentialsProvider( new BasicAWSCredentials( "AKIAIXJBKHOT3MX3X7WA", "r5PPCMQlupuieg/+f1xrTJL1PY/0qWSTfJB6YNk5")) )
+//                    .withCredentials(new AWSStaticCredentialsProvider( new BasicAWSCredentials(String accessKey, String secretKey)) )
 //                    .withRegion("us-east-1")
 //                    .build();
 //

@@ -1,4 +1,4 @@
-package hello;
+﻿package hello;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -32,9 +32,9 @@ public class SentimentsService {
             AmazonComprehendClientBuilder.standard()
                 // .withCredentials(awsCreds)
                 // Working credentails of jayesh
-               // .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("AKIAIXJBKHOT3MX3X7WA", "r5PPCMQlupuieg/+f1xrTJL1PY/0qWSTfJB6YNk5")) )
+               // .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(String accessKey, String secretKey)) )
                 // Working with nilesh alexa poc credentials
-                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("AKIAJH62XXNMMTVFTX6Q", "qXzed5I4R71E3ja0cSfL6uT5GdI4WG/lJuwfXpxC")) )
+                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(String accessKey, String secretKey)) )
                 .withRegion("us-east-1")
                 .build();
 
